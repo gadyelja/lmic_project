@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 st.markdown("""
     <h1 style="text-align: center;">LMIC countries : analysis</h1>
 """, unsafe_allow_html=True) # Título
-path = 'list_of_countries_index.xlsx
+path = 'list_of_countries_index.xlsx'
 # Importar librerias
 population = pd.read_excel(path, sheet_name=8)
 lmic = pd.read_excel(path, sheet_name= 9)
