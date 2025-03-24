@@ -14,14 +14,14 @@ st.set_page_config(layout="wide")
 st.markdown("""
     <h1 style="text-align: center;">LMIC countries : analysis</h1>
 """, unsafe_allow_html=True) # Título
-
+path = 'list_of_countries_index.xlsx
 # Importar librerias
-population = pd.read_excel(r'C:\Users\gadyh\OneDrive\Documentos\UNISABANA\CAPM - WORLDBANK\list_of_countries_index.xlsx', sheet_name=8)
-lmic = pd.read_excel(r'C:\Users\gadyh\OneDrive\Documentos\UNISABANA\CAPM - WORLDBANK\list_of_countries_index.xlsx' , sheet_name= 9)
-mark_cap = pd.read_excel(r'C:\Users\gadyh\OneDrive\Documentos\UNISABANA\CAPM - WORLDBANK\list_of_countries_index.xlsx' , sheet_name= 7)
-returns = pd.read_excel(r'C:\Users\gadyh\OneDrive\Documentos\UNISABANA\CAPM - WORLDBANK\list_of_countries_index.xlsx', sheet_name = 3 )
-famafrench = pd.read_excel(r'C:\Users\gadyh\OneDrive\Documentos\UNISABANA\CAPM - WORLDBANK\list_of_countries_index.xlsx', sheet_name=  10)
-msci = pd.read_excel(r'C:\Users\gadyh\OneDrive\Documentos\UNISABANA\CAPM - WORLDBANK\list_of_countries_index.xlsx', sheet_name=  11)
+population = pd.read_excel(path, sheet_name=8)
+lmic = pd.read_excel(path, sheet_name= 9)
+mark_cap = pd.read_excel(path, sheet_name= 7)
+returns = pd.read_excel(path, sheet_name = 3 )
+famafrench = pd.read_excel(path, sheet_name=  10)
+msci = pd.read_excel(path, sheet_name=  11)
 #returns = returns.iloc[:, :-2]
 
 
